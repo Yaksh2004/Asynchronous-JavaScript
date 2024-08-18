@@ -5,10 +5,10 @@
 function delayedMessage(message, delay, callback){
     setTimeout(() => {
         console.log(message);
-        callback;
+        callback();
     }, delay);
-};
+}
 
 delayedMessage("Hello World!", 3000, function(){
-    console.log("This mesasge was delayed by 3 seconds")
+    console.log("This mesasge was delayed by 3 seconds");
 });
